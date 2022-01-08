@@ -1,5 +1,5 @@
 ---
-title: "Photo"
+title: "摄影"
 date: 2018-10-12T10:20:16+09:00
 description: Photo Gallery
 type: "gallery"
