@@ -1,5 +1,5 @@
 baseURL = "https://gitech.leoay.com"
-title = "Hugo Zzo Theme"
+title = "leoay技术日志"
 theme = "zzo"
 
 defaultContentLanguage = "cn"
@@ -15,7 +15,7 @@ enableEmoji = true
 paginate = 13
 rssLimit = 100
 
-enableGitInfo = false
+enableGitInfo = true
 googleAnalytics = ""
 
 [markup]
