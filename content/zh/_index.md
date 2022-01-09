@@ -71,7 +71,7 @@ header:
       - paddingX: 50
         paddingY: 0
         align: left
-        imageSrc: images/header/background.jpg
+        imageSrc: images/header/back1.jpg
         imageSize: cover
         imageRepeat: no-repeat
         imagePosition: center
@@ -86,7 +86,7 @@ header:
       - paddingX: 50
         paddingY: 0
         align: center
-        imageSrc: images/header/background.jpg
+        imageSrc: images/header/back2.jpg
         imageSize: cover
         imageRepeat: no-repeat
         imagePosition: center
@@ -101,7 +101,7 @@ header:
       - paddingX: 50
         paddingY: 0
         align: right
-        imageSrc: images/header/background.jpg
+        imageSrc: images/header/back3.jpg
         imageSize: cover
         imageRepeat: no-repeat
         imagePosition: center

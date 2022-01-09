@@ -1,9 +1,9 @@
 +++
 aliases = ["posts","articles","blog","showcase","docs"]
-title = "文章集合"
+title = "文章列表"
 author = "leoay"
 tags = ["index"]
-description = "Post page"
+description = "文章列表"
 +++
 
 3434
