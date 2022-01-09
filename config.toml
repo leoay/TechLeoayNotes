@@ -2,9 +2,9 @@ baseURL = "https://gitech.leoay.com"
 title = "leoay技术日志"
 theme = "zzo"
 
-defaultContentLanguage = "cn"
+defaultContentLanguage = "zh"
 defaultContentLanguageInSubdir = true
-hasCJKLanguage = true
+hasCJKLanguage = false
 
 summaryLength = 70
 buildFuture = true

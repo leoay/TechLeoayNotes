@@ -27,7 +27,7 @@ header:
     title:
       - HUGO
     subtitle:
-      - The world’s fastest framework for building websites
+      - 一个记录技术的轻量日志
     titleColor: 
     titleShadow: true
     titleFontSize: 44
@@ -76,9 +76,9 @@ header:
         imageRepeat: no-repeat
         imagePosition: center
         title:
-          - header title1
+          - leoay技术日志
         subtitle:
-          - header subtitle1
+          - 分享好玩有用的技术知识
         titleFontSize: 44
         subtitleFontSize: 16
         spaceBetweenTitleSubtitle: 20
@@ -91,9 +91,9 @@ header:
         imageRepeat: no-repeat
         imagePosition: center
         title:
-          - header title2
+          - leoay技术日志
         subtitle:
-          - header subtitle2
+          - 分享好玩有用的技术知识
         titleFontSize: 44
         subtitleFontSize: 16
         spaceBetweenTitleSubtitle: 20
@@ -106,9 +106,9 @@ header:
         imageRepeat: no-repeat
         imagePosition: center
         title:
-          - header title3
+          - leoay技术日志
         subtitle:
-          - header subtitle3
+          - 分享好玩有用的技术知识
         titleFontSize: 44
         subtitleFontSize: 16
         spaceBetweenTitleSubtitle: 20

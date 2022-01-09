@@ -16,5 +16,3 @@ images:
     caption: child
 image: images/feature2/gallery.png
 ---
-
-Sample images from [Pixabay](https://pixabay.com)

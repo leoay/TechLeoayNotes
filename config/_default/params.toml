@@ -1,6 +1,6 @@
 logoText = "leoay技术日志"
 logoType = "short" # long, short
-description = "The Zzo theme for Hugo example site."
+description = "leoay技术日志，分享好玩儿有用的技术知识！"
 custom_css = []
 custom_js = []
 useFaviconGenerator = true # https://www.favicon-generator.org/
@@ -24,7 +24,7 @@ enableAppbarSearchIcon = false
 enableAppbarLangIcon = false
 
 # header
-homeHeaderType = "text" # text, img, slide, typewriter
+homeHeaderType = "slide" # text, img, slide, typewriter
 hideHomeHeaderWhenMobile = false
 
 # menu
@@ -60,13 +60,13 @@ publicationIcon = "📚"
 typeIcon = "🎯"
 
 # whoami
-myname = "leoay"
-email = "leoay23@hotmail.com"
+myname = "zzossig"
+email = "zzossig@gmail.com"
 whoami = "Web Developer"
 bioImageUrl = ""
 useGravatar = false
-location = "中国杭州"
-organization = "leoay"
+location = "Seoul, Korea"
+organization = "Hugo"
 link = "https://zzossig.io/ko"
 
 # sidebar
@@ -111,7 +111,7 @@ fullContents = false
 # comment
 enableComment = true
 disqus_shortname = ""
-commento = true
+commento = false
 
 [telegram]
   enable = false
@@ -129,10 +129,10 @@ commento = true
   repo = ""               # The repo to store comments
 
 [gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
-  owner = "leoay"              # Your GitHub ID
-  repo = "gitech_comment"               # The repo to store comments
-  clientId = "4afa5ebcecae32ced2c8"           # Your client ID
-  clientSecret = "58871c35a39ba7d4e0b3a6d067d6cbb097c3eda7"       # Your client secret
+  owner = ""              # Your GitHub ID
+  repo = ""               # The repo to store comments
+  clientId = ""           # Your client ID
+  clientSecret = ""       # Your client secret
 
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn
