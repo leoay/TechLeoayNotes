@@ -5,7 +5,6 @@
   languagedir = "ltr"
   contentdir = "content/zh"
 
-
 [en]
   title = "leoay技术日志"
   languageName = "English"

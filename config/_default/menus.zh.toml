@@ -4,8 +4,6 @@
   url = "posts"
   weight = 1
 
-
-
 [[main]]
   identifier = "archive"
   name = "归档"
@@ -28,13 +26,11 @@
   name = "摄影"
   url = "gallery/photo"
 
-
 [[main]]
   identifier = "showcase"
   name = "项目展示"
   url = "showcase"
   weight = 4
-
 
 [[main]]
   identifier = "about"
