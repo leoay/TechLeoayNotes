@@ -1,8 +1,10 @@
 [[main]]
-  identifier = "about"
-  name = "关于"
-  url = "about"
-  weight = 6
+  identifier = "posts"
+  name = "文章列表"
+  url = "posts"
+  weight = 1
+
+
 
 [[main]]
   identifier = "archive"
@@ -26,11 +28,6 @@
   name = "摄影"
   url = "gallery/photo"
 
-[[main]]
-  identifier = "posts"
-  name = "文章列表"
-  url = "posts"
-  weight = 1
 
 [[main]]
   identifier = "showcase"
@@ -38,8 +35,9 @@
   url = "showcase"
   weight = 4
 
+
 [[main]]
-  identifier = "publication"
-  name = "出版"
-  url = "publication"
+  identifier = "about"
+  name = "关于"
+  url = "about"
   weight = 5
