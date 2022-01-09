@@ -27,7 +27,7 @@
   "background": {
     "persistent": false
   },
-  "start_url": "https://exampleSite.com/",
+  "start_url": "/",
   "theme_color": "#fff",
   "background_color": "#fff",
   "display": "standalone"
