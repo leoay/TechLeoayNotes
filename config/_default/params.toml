@@ -42,7 +42,7 @@ searchThreshold = 0.4 # 0.0: exact match, 1.0: any match
 enableBreadcrumb = true
 enableGoToTop = true
 enableWhoami = true
-summaryShape = "classic" # card, classic, compact
+summaryShape = "compact" # card, classic, compact
 archiveGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
 archivePaginate = 13
 paginateWindow = 1
@@ -90,7 +90,7 @@ enableSidebarPostsByOrder = false
 
 # footer
 showPoweredBy = false
-showFeedLinks = true
+showFeedLinks = false
 showSocialLinks = true
 enableLangChange = false
 enableThemeChange = true
@@ -109,9 +109,9 @@ updateFrequency = ""
 fullContents = false
 
 # comment
-enableComment = true
+enableComment = false
 disqus_shortname = ""
-commento = true
+commento = false
 
 [telegram]
   enable = false
@@ -195,7 +195,7 @@ commento = true
 [donationOptions]
   enable = true
   alipay = "" 
-  wechat = ""
+  wechat = "/zanshang.jpeg"
   paypal = ""
   patreon = ""
 
