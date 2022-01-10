@@ -58,7 +58,7 @@ header:
     spaceBetweenTitleSubtitle: 20
 
   - type: slide
-    height: 235
+    height: 535
     options:
         startSlide: 0
         auto: 5000
