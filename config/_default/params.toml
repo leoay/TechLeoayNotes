@@ -200,15 +200,12 @@ commento = false
   patreon = ""
 
 # possible share name: ["facebook","twitter", "reddit", "linkedin", "tumblr", "weibo", "douban", "line", "pocket", "feedly", "hatena", "pinterest", "delicious", "google"]
-[[share]]
-  name = ""
-  username = ""
-[[share]]
-  name = ""
+#[[share]]
+#  name = ""
+#  username = ""
+#[[share]]
+#  name = ""
 
-[[footerLinks]]
-  name = ""
-  link = ""
-[[footerLinks]]
-  name = ""
-  link = ""
+#[[footerLinks]]
+#  name = ""
+#  link = ""
