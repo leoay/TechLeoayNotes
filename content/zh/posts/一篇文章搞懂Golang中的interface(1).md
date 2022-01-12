@@ -9,7 +9,7 @@ enableTocContent: false
 author: leoay
 authorEmoji: 🎅
 pinned: true
-authorImageUrl: "/images/whoami/leoay.png"
+authorImageUrl: "/images/whoami/shuaian.jpg"
 tags:
 - golang
 - interface
