@@ -46,14 +46,14 @@ header:
     paddingY: 0
     align: center
     title:
-      -
+      - leoay技术日志
     subtitle:
-      -
+      - 分享好玩有用的技术知识
     titleColor:
-    titleShadow: false
+    titleShadow: true
     titleFontSize: 44
     subtitleColor:
-    subtitleCursive: false
+    subtitleCursive: true
     subtitleFontSize: 16
     spaceBetweenTitleSubtitle: 20
 
@@ -71,7 +71,7 @@ header:
       - paddingX: 50
         paddingY: 0
         align: left
-        imageSrc: images/header/back1.jpg
+        imageSrc: images/header/background.jpg
         imageSize: cover
         imageRepeat: no-repeat
         imagePosition: center
@@ -86,7 +86,7 @@ header:
       - paddingX: 50
         paddingY: 0
         align: center
-        imageSrc: images/header/back2.jpg
+        imageSrc: images/header/background.jpg
         imageSize: cover
         imageRepeat: no-repeat
         imagePosition: center
@@ -101,7 +101,7 @@ header:
       - paddingX: 50
         paddingY: 0
         align: right
-        imageSrc: images/header/back3.jpg
+        imageSrc: images/header/background.jpg
         imageSize: cover
         imageRepeat: no-repeat
         imagePosition: center

@@ -24,7 +24,7 @@ enableAppbarSearchIcon = false
 enableAppbarLangIcon = false
 
 # header
-homeHeaderType = "slide" # text, img, slide, typewriter
+homeHeaderType = "img" # text, img, slide, typewriter
 hideHomeHeaderWhenMobile = false
 
 # menu
@@ -109,7 +109,7 @@ updateFrequency = ""
 fullContents = false
 
 # comment
-enableComment = false
+enableComment = true
 disqus_shortname = ""
 commento = false
 
@@ -193,9 +193,9 @@ commento = false
   google-scholar = ""
 
 [donationOptions]
-  enable = true
+  enable = false
   alipay = "" 
-  wechat = "/zanshang.jpeg"
+  wechat = ""
   paypal = ""
   patreon = ""
 
