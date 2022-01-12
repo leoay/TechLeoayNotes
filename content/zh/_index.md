@@ -48,7 +48,7 @@ header:
     title:
       - leoay技术日志
     subtitle:
-      - 分享好玩有用的技术知识
+      - 
     titleColor:
     titleShadow: true
     titleFontSize: 44
