@@ -19,3 +19,5 @@ categories:
 image: images/feature2/color-palette.png
 ---
 
+![](https://pic4.zhimg.com/v2-49ec2bdf975ead3536bbb647f12ee22c)
+
