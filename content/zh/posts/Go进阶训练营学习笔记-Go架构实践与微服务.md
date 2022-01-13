@@ -13,9 +13,6 @@ tags:
 - 微服务
 - Go进阶训练营
 series:
-- Go架构
-- Golang
-- 微服务
 - Go进阶训练营
 categories:
 - Go进阶训练营
