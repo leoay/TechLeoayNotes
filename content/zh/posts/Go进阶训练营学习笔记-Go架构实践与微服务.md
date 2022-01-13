@@ -22,8 +22,10 @@ categories:
 - Golang
 - Go架构
 - 微服务
-image: https://pic4.zhimg.com/v2-683be6cff5288cd457d0241e4b760c6c
+image: 
 ---
+
+![](https://pic4.zhimg.com/v2-683be6cff5288cd457d0241e4b760c6c)
 
 ### 微服务概览
 
