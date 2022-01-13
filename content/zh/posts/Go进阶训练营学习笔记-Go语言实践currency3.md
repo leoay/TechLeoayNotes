@@ -1,6 +1,6 @@
 ---
-title: "Go进阶训练营学习笔记☍Go架构实践与微服务"
-date: 2022-01-12T14:28:31+08:00
+title: "Go进阶训练营学习笔记☍Go语言实践currency3"
+date: 2022-01-14T14:28:31+08:00
 draft: false
 hideToc: false
 enableToc: true
@@ -9,22 +9,20 @@ author: leoay
 authorEmoji: 🎅
 pinned: true
 tags:
-- Go架构
-- 微服务
+- Error
 - Go进阶训练营
 series:
 - Go进阶训练营
 categories:
 - Go进阶训练营
 - Golang
-- Go架构
-- 微服务
+- Error
 image: 
 ---
 
 ![](https://pic4.zhimg.com/v2-683be6cff5288cd457d0241e4b760c6c)
 
-#### 微服务概览
+#### Error Vs Exception
 
 ##### 单体架构
 
@@ -40,7 +38,7 @@ image:
 
 
 
-#### 微服务设计
+#### Error Type
 
 AAAAAAAAAAAA
 AAA
@@ -62,33 +60,20 @@ AAAA
 
 
 
-#### gRPC与服务发现
-
-
+#### Handling Error
 
 AAAAAAAAAAAA
-AAA
-AAAAAAAAAAAAAAAA
-AAA
-AAAAAAAAAAAAAAAA
-AAA
-AAAAAAAAAAAAAAAA
-AAA
-AAAAAAAAAAAAAAAA
-AAA
-AAAAAAAAAAAAAAAA
-AAA
-AAAAAAAAAAAAAAAA
-AAA
-AAAAAAAAAAAAAAAA
-AAA
-AAAAAAAAAAAAAAAA
-AAA
-AAAAAAAAAAAAAAAA
-AAA
-AAAA
 
 
-#### 多集群和多租户
+#### Go 1.13 errors
 
+
+
+#### Go 2 Error Inspection
+
+
+
+
+
+#### 参考文档
 
