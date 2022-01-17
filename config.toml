@@ -17,7 +17,6 @@ rssLimit = 100
 
 enableGitInfo = true
 googleAnalytics = ""
-baiduAnalytics = "6c9830ea98f6a8348a9bc80fb0df2beb"
 
 [markup]
   [markup.goldmark]
