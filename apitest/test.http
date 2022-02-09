@@ -1,0 +1,18 @@
+PUT https://61.130.10.147:3666/LAPI/V1.0/System/Module/UserCheck
+Authorization: Digest yaoshuai@bresee.cn password
+
+
+###
+POST https://61.130.10.147:3666/LAPI/V1.0/System/Module/AuthOffLineLAPI/V1.0/System/Module/AuthOffLine
+ Authorization: Digest yaoshuai@bresee.cn 25d55ad283aa400af464c76d713c07ad
+
+ Content-Type: application/json
+ {
+    "BomCode": "BA_G02-N01-A",
+    "AuthData": ["oe6yWizxLJfQKU0LJdTFkV5Cwh9EQdxcESkSBPTcgPGtVmQCOrvk/Ru3C527++Pwp/uk8cUKTeS1JgH0rAgfgA="],
+    "Province": "2",
+    "Channels": "11",
+    "Pictures": "0",
+    "DeadTimestamp": 0,
+    "BatchId": "NULL"
+ }

@@ -98,10 +98,10 @@ enableThemeChange = true
 # service
 googleTagManager = "" # GTM-XXXXXX
 baiduAnalytics = "6c9830ea98f6a8348a9bc80fb0df2beb"
-enableBusuanzi = true
-busuanziSiteUV = true
-busuanziSitePV = true
-busuanziPagePV = true
+enableBusuanzi = false
+busuanziSiteUV = false
+busuanziSitePV = false
+busuanziPagePV = false
 
 # rss
 updatePeriod = "" # Possible values: 'hourly', 'daily', 'weekly', 'monthly', or 'yearly'.
