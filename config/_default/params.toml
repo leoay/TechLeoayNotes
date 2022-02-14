@@ -132,7 +132,7 @@ commento = false
   owner = "leoay"              # Your GitHub ID
   repo = "https://github.com/leoay/gittalk"               # The repo to store comments
   clientId = "636e8592b75a7699761d"           # Your client ID
-  clientSecret = "6f28f082e63f4448423e5f12b4f47876993647a6"       # Your client secret
+  clientSecret = "6f28f082e63f4448423e5f12b4f47876993647a6"        # Your client secret
 
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn
