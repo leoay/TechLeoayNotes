@@ -132,7 +132,7 @@ commento = false
   owner = "leoay"              # Your GitHub ID
   repo = "https://github.com/leoay/TechLeoayNotes"               # The repo to store comments
   clientId = "636e8592b75a7699761d"           # Your client ID
-  clientSecret = "135832b90e0979c3859765e9ccd038750a8b21f0"        # Your client secret
+  clientSecret = "135832b90e0979c3859765e9ccd038750a8b21f0"     # Your client secret
 
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn
