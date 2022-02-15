@@ -3,11 +3,4 @@
   languageName = "中文"
   weight = 1
   languagedir = "ltr"
-  contentdir = "content/zh"
-
-[en]
-  title = "leoay技术日志"
-  languageName = "English"
-  weight = 2
-  languagedir = "ltr"
-  contentdir = "content/en"
+  contentdir = "content"
