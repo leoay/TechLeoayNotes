@@ -1,5 +1,5 @@
 +++
-aliases = ["posts","articles","blog","showcase","docs"]
+aliases = ["cv"]
 title = "文章列表"
 author = "leoay"
 tags = ["index"]
