@@ -5,9 +5,9 @@ custom_css = []
 custom_js = []
 useFaviconGenerator = true # https://www.favicon-generator.org/
 meta_image = ""
-themecolor = ""
+themecolor = "light"
 
-themeOptions = ["dark", "light", "hacker", "solarized", "kimbie"]
+themeOptions = ["light", "dark", "hacker", "solarized", "kimbie"]
 notAllowedTypesInHome = ["contact", "talks", "about", "showcase", "publication", "presentation", "resume"]
 notAllowedTypesInHomeSidebar = ["about", "archive", "showcase", "publication", "presentation", "resume"]
 notAllowedTypesInArchive = ["about", "talks", "showcase", "publication", "presentation", "resume"]
@@ -24,7 +24,7 @@ enableAppbarSearchIcon = false
 enableAppbarLangIcon = false
 
 # header
-homeHeaderType = "img" # text, img, slide, typewriter
+homeHeaderType = "typewriter" # text, img, slide, typewriter
 hideHomeHeaderWhenMobile = false
 
 # menu
@@ -130,9 +130,9 @@ commento = false
 
 [gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
   owner = "leoay"              # Your GitHub ID
-  repo = "https://github.com/leoay/gittalk"               # The repo to store comments
+  repo = "gittalk"               # The repo to store comments
   clientId = "636e8592b75a7699761d"           # Your client ID
-  clientSecret = "6f28f082e63f4448423e5f12b4f47876993647a6"       # Your client secret
+  clientSecret = "135832b90e0979c3859765e9ccd038750a8b21f0"     # Your client secret
 
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn
