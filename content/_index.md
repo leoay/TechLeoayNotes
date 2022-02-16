@@ -14,5 +14,5 @@ header:
     paddingX: 50
     align: center
     fontSize: 44
-    fontColor: white
+    fontColor: black
 ---
