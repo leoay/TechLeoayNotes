@@ -17,7 +17,7 @@ series:
 categories:
 - LeetCode
 - 单调栈
-image: images/feature2/color-palette.png
+image: https://pic4.zhimg.com/v2-05e4ea7a1c3e3e2cbf65a0b0b9d65edf
 ---
 
 题目描述：

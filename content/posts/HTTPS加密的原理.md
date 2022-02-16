@@ -11,12 +11,13 @@ pinned: true
 tags:
 - 网络
 - HTTP
-- TCP
+- HTTPS
+- 加密
 series:
-- 计算机网络
+- 
 categories:
-- 网络基础
-image: images/feature2/color-palette.png
+- 计算机网络
+image: https://www.redeszone.net/app/uploads-redeszone.net/2019/11/https-portada.png
 ---
 
 ![](https://pic4.zhimg.com/v2-49ec2bdf975ead3536bbb647f12ee22c)
