@@ -1,13 +1,13 @@
 [[main]]
-  identifier = "posts"
-  name = "文章列表"
-  url = "posts"
+  identifier = "公众号文章"
+  name = "公众号文章"
+  url = "公众号文章"
   weight = 1
 
 [[main]]
-  identifier = "archive"
+  identifier = "归档"
   name = "归档"
-  url = "archive"
+  url = "归档"
   weight = 2
 
 [[main]]
@@ -17,7 +17,7 @@
   weight = 3
 
 [[main]]
-  identifier = "about"
+  identifier = "关于"
   name = "关于"
-  url = "about"
+  url = "关于"
   weight = 4
