@@ -23,9 +23,9 @@ image:
 
 ![](https://pic4.zhimg.com/v2-683be6cff5288cd457d0241e4b760c6c)
 
-#### Error Vs Exception
+### Error Vs Exception
 
-##### Error
+#### Error
 
 Go语言中的error本质上就是一个普通的接口，我们可以从源码`builtin.go`中看到
 
@@ -108,7 +108,10 @@ func main() {
 }
 ```
 
-
-
-
-##### 各个语言中Error或者Exception的演进历史
+#### 各个语言中Error或者Exception的演进历史
+* C
+	单反回值，一般通过传递指针作为入参，返回值为 int 表示成功还是失败。
+	```c
+	ngx_int_t ngx_create_path(ngx_file_t *file, ngx_path_t *path);
+	```
+* C++
