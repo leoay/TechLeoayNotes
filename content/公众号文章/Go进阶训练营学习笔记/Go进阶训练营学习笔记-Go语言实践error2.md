@@ -26,7 +26,33 @@ image:
 
 ##### Error
 
-Go语言中的error就是一个普通的接口，我们直接看源码
+Go语言中的error就是一个普通的接口，这一点我们可以直接从源码中看到
+
+```go
+http://golang.org/pkg/builtin/#error
+
+type error interface {
+    Error() string
+}
+```
+
+在开发过程中我们常常使用errors.New() 函数返回一个error对象。
+
+```go
+http://golang.org/src/pkg/errors/errors.go
+
+type errorString struct {
+    s string
+}
+
+
+http://golang.org/src/pkg/errors/errors.go
+
+func (e *errorString) Error() string {
+    return e.s
+}
+
+```
 
 
 
