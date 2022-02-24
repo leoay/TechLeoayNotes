@@ -63,6 +63,7 @@ typeIcon = "🎯"
 myname = "leoay"
 email = "leoay23@hotmail.com"
 whoami = "Gopher Web"
+gzhImageUrl = "/images/whoami/leoaytechgzh.jpg"
 bioImageUrl = "/images/whoami/shuaian.jpg"
 useGravatar = false
 location = "中国, 杭州"
@@ -71,7 +72,7 @@ link = "https://tech.leoay.com"
 
 # sidebar
 enableBio = true
-enableBioImage = true
+enableBioImage = false
 enableSidebar = true
 enableSidebarTags = true
 enableSidebarSeries = true
@@ -109,7 +110,7 @@ updateFrequency = ""
 fullContents = false
 
 # comment
-enableComment = true
+enableComment = false
 disqus_shortname = ""
 commento = false
 
