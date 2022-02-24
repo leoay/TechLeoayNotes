@@ -114,4 +114,24 @@ func main() {
 	```c
 	ngx_int_t ngx_create_path(ngx_file_t *file, ngx_path_t *path);
 	```
+
 * C++
+	引入exception, 但是无法知道被调用方会抛出异常
+
+* Javad
+	引入了checked exception, 方法的所有者必须申明，调用者必须处理。在启动时抛出大量的异常是司空见惯的事情，并在它们的调用堆栈中尽职地记录下来。Java异常不再是异常，而是变得司空见惯了。
+	它们从良性到灾难性都有使用，异常的严重性由函数调用者来区分。
+	```Java
+	catch(e Exception) {
+		//ignore
+	}
+	```
+
+* Go
+	而Go的处理异常逻辑是不引入 `exception`， 支持多参数返回，所以你很容易在函数签名中带上实现了`error interface`的对象，交由调用者来判定。
+
+	如果一个函数返回了(value, error)， 你不能对这个`value`做任何假设，必须先判定error。唯一可以忽略error的情况是，你连value也不关心。
+
+	Go中有panic机制，如果你认为和其他语言的exception一样，那你就错了。当我们抛出异常的时候，相当于你把exception扔给了调用者来处理。
+
+	比如，你在C++中，把string转为int, 如果转换失败了
