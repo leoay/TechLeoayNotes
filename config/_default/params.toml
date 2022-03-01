@@ -68,7 +68,7 @@ bioImageUrl = "/images/whoami/shuaian.jpg"
 useGravatar = false
 location = "中国, 杭州"
 organization = "leoay技术圈"
-link = "https://tech.leoay.com"
+link = "https://gitech.leoay.com/"
 
 # sidebar
 enableBio = true
