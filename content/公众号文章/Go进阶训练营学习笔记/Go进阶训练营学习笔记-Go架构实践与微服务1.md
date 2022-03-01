@@ -20,7 +20,7 @@ categories:
 - Golang
 - Go架构
 - 微服务
-image: 
+image: /images/face/Go进阶架构微服务.png
 ---
 
 ![](https://pic4.zhimg.com/v2-683be6cff5288cd457d0241e4b760c6c)
