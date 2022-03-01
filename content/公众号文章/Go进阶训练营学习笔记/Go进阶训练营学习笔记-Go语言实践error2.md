@@ -7,7 +7,8 @@ enableToc: true
 enableTocContent: false
 author: leoay
 authorEmoji: 🎅
-pinned: true
+pinned: false
+description = "Go进阶训练营学习笔记 Go语言实践error"
 tags:
 - Error
 - Go进阶训练营
@@ -134,3 +135,9 @@ func main() {
 	Go中有panic机制，如果你认为和其他语言的exception一样，那你就错了。当我们抛出异常的时候，相当于你把exception扔给了调用者来处理。
 
 	比如，你在C++中，把string转为int, 如果转换失败了
+
+
+
+
+##### 感谢朋友们的阅读，欢迎大家关注我的微信公众号 leoay技术圈，扫描下方二维码查看详情。
+![](/images/whoami/leoaytechgzh.jpg)

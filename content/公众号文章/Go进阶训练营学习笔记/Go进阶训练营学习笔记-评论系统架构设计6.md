@@ -23,3 +23,8 @@ image: /images/face/Go进阶评论系统架构.png
 
 ![](https://pic4.zhimg.com/v2-683be6cff5288cd457d0241e4b760c6c)
 
+
+
+
+感谢朋友们的阅读，欢迎大家关注我的微信公众号 leoay技术圈，扫描下方二维码查看详情。
+![](/images/whoami/leoaytechgzh.jpg)

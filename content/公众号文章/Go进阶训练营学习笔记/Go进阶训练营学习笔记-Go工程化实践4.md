@@ -7,7 +7,8 @@ enableToc: true
 enableTocContent: false
 author: leoay
 authorEmoji: 🎅
-pinned: true
+pinned: false
+
 tags:
 - Error
 - Go进阶训练营

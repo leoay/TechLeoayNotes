@@ -7,16 +7,16 @@ enableToc: true
 enableTocContent: false
 author: leoay
 authorEmoji: 🎅
-pinned: true
+pinned: false
+description: "Go进阶训练营学习笔记 微服务可用性设计"
 tags:
-- Error
+- 微服务设计与实践
 - Go进阶训练营
 series:
 - Go进阶训练营
 categories:
 - Go进阶训练营
 - Golang
-- Error
 image: 
 ---
 
@@ -111,3 +111,9 @@ image:
 ##### 5
 ##### 6
 ##### 7
+
+
+
+
+感谢朋友们的阅读，欢迎大家关注我的微信公众号 leoay技术圈，扫描下方二维码查看详情。
+![](/images/whoami/leoaytechgzh.jpg)

@@ -7,7 +7,8 @@ enableToc: true
 enableTocContent: false
 author: leoay
 authorEmoji: 🎅
-pinned: true
+pinned: false
+description: "Go进阶训练营学习笔记 Go架构 微服务"
 tags:
 - Go架构
 - 微服务
@@ -26,6 +27,9 @@ image:
 
 #### 微服务概览
 
+
+
+
 ##### 单体架构
 
 所谓单体架构的应用是指最后被打包为单体式应用，尽管在逻辑上是模块化的，但是在部署使用的时候是整个应用部署的。
@@ -36,29 +40,7 @@ image:
 
 
 
-
-
-
-
 #### 微服务设计
-
-AAAAAAAAAAAA
-AAA
-AAAAAAAAAAAAAAAA
-AAA
-AAAAAAAAAAAAAAAA
-AAA
-AAAAAAAAAAAAAAAA
-AAA
-AAAAAAAAAAAAAAAA
-AAA
-AAAAAAAAAAAAAAAA
-AAA
-AAAAAAAAAAAAAAAA
-AAA
-AAAA
-
-
 
 
 
@@ -66,29 +48,11 @@ AAAA
 
 
 
-AAAAAAAAAAAA
-AAA
-AAAAAAAAAAAAAAAA
-AAA
-AAAAAAAAAAAAAAAA
-AAA
-AAAAAAAAAAAAAAAA
-AAA
-AAAAAAAAAAAAAAAA
-AAA
-AAAAAAAAAAAAAAAA
-AAA
-AAAAAAAAAAAAAAAA
-AAA
-AAAAAAAAAAAAAAAA
-AAA
-AAAAAAAAAAAAAAAA
-AAA
-AAAAAAAAAAAAAAAA
-AAA
-AAAA
-
 
 #### 多集群和多租户
 
 
+
+
+感谢朋友们的阅读，欢迎大家关注我的微信公众号 leoay技术圈，扫描下方二维码查看详情。
+![](/images/whoami/leoaytechgzh.jpg)
