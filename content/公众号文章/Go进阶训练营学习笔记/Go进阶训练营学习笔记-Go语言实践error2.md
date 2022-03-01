@@ -20,7 +20,6 @@ categories:
 image: 
 ---
 
-
 ![](https://pic4.zhimg.com/v2-683be6cff5288cd457d0241e4b760c6c)
 
 ### Error Vs Exception
