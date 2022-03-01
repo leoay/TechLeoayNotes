@@ -17,7 +17,7 @@ series:
 categories:
 - LeetCode
 - 单调栈
-image: https://pic4.zhimg.com/v2-05e4ea7a1c3e3e2cbf65a0b0b9d65edf
+image: /images/face/leetcode.png
 ---
 
 题目描述：
