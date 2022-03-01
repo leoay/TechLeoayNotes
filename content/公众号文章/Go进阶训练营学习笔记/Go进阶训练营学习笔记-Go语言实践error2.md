@@ -8,7 +8,7 @@ enableTocContent: false
 author: leoay
 authorEmoji: 🎅
 pinned: false
-description = "Go进阶训练营学习笔记 Go语言实践error"
+description: "Go进阶训练营学习笔记 Go语言实践error"
 tags:
 - Error
 - Go进阶训练营
