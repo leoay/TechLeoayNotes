@@ -1,6 +1,6 @@
 ---
 title: "Go进阶训练营学习笔记☍评论系统架构设计6"
-date: 2022-01-14T14:28:31+08:00
+date: 2022-01-06T14:28:31+08:00
 draft: false
 hideToc: false
 enableToc: true
@@ -17,7 +17,7 @@ categories:
 - Go进阶训练营
 - Golang
 - Error
-image: 
+image: https://pic4.zhimg.com/v2-683be6cff5288cd457d0241e4b760c6c
 ---
 
 ![](https://pic4.zhimg.com/v2-683be6cff5288cd457d0241e4b760c6c)
