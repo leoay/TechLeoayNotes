@@ -15,7 +15,7 @@ series:
 categories:
 - Redis
 - Redis常识
-image: 
+image: /images/face/redis-icon-logo.png
 ---
 
 ![](https://pic4.zhimg.com/v2-a20d2b434d71bfa23b7b52e949b34855)
