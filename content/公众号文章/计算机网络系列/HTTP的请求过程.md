@@ -1,5 +1,5 @@
 ---
-title: "HTTP和TCP有什么关系"
+title: "HTTP的请求过程"
 date: 2022-01-12T14:28:31+08:00
 draft: false
 hideToc: false
@@ -8,7 +8,7 @@ enableTocContent: false
 author: leoay
 authorEmoji: 🎅
 pinned: false
-description: "HTTP和TCP有什么关系"
+description: "HTTP的请求过程"
 tags:
 - 网络
 - HTTP
@@ -19,6 +19,4 @@ categories:
 - 网络基础
 image: 
 ---
-
-![](https://pic4.zhimg.com/v2-49ec2bdf975ead3536bbb647f12ee22c)
 
