@@ -46,7 +46,7 @@ Markdown 不是想要取代 HTML，甚至也没有要和它相近，它的语法
 要制约的只有一些 HTML 区块元素――比如 `<div>`、`<table>`、`<pre>`、`<p>` 等标签，必须在前后加上空行与其它内容区隔开，还要求它们的开始标签与结尾标签不能用制表符或空格来缩进。Markdown 的生成器有足够智能，不会在 HTML 区块标签外加上不必要的 `<p>` 标签。
 
 例子如下，在 Markdown 文件里加上一段 HTML 表格：
-
+```html
     这是一个普通段落。
 
     <table>
@@ -56,7 +56,7 @@ Markdown 不是想要取代 HTML，甚至也没有要和它相近，它的语法
     </table>
 
     这是另一个普通段落。
-
+```
 请注意，在 HTML 区块标签间的 Markdown 格式语法将不会被处理。比如，你在 HTML 区块内使用 Markdown 样式的`*强调*`会没有效果。
 
 HTML 的区段（行内）标签如 `<span>`、`<cite>`、`<del>` 可以在 Markdown 的段落、列表或是标题里随意使用。依照个人习惯，甚至可以不用 Markdown 格式，而直接采用 HTML 标签来格式化。举例说明：如果比较喜欢 HTML 的 `<a>` 或 `<img>` 标签，可以直接使用这些标签，而不用 Markdown 提供的链接或是图像标签语法。
@@ -80,25 +80,25 @@ HTML 的区段（行内）标签如 `<span>`、`<cite>`、`<del>` 可以在 Mark
 Markdown 让你可以自然地书写字符，需要转换的由它来处理好了。如果你使用的 `&` 字符是 HTML 字符实体的一部分，它会保留原状，否则它会被转换成 `&amp`;。
 
 所以你如果要在文档中插入一个版权符号 `©`，你可以这样写：
-
+```html
     &copy;
-
+```
 Markdown 会保留它不动。而若你写：
-
+```html
     AT&T
-
+```
 Markdown 就会将它转为：
-
+```html
     AT&amp;T
-
+```
 类似的状况也会发生在 `<` 符号上，因为 Markdown 允许 [兼容 HTML](#html) ，如果你是把 `<` 符号作为 HTML 标签的定界符使用，那 Markdown 也不会对它做任何转换，但是如果你写：
-
+```html
     4 < 5
-
+````
 Markdown 将会把它转换为：
-
+```html
     4 &lt; 5
-
+```
 不过需要注意的是，code 范围内，不论是行内还是区块， `<` 和 `&` 两个符号都*一定*会被转换成 HTML 实体，这项特性让你可以很容易地用 Markdown 写 HTML code （和 HTML 相对而言， HTML 语法中，你要把所有的 `<` 和 `&` 都转换为 HTML 实体，才能在 HTML 文件里面写出 HTML code。）
 
 * * *
@@ -124,70 +124,75 @@ Markdown 将会把它转换为：
 Markdown 支持两种标题的语法，类 [Setext] [1] 和类 [atx] [2] 形式。
 
 类 Setext 形式是用底线的形式，利用 `=` （最高阶标题）和 `-` （第二阶标题），例如：
+```makdown
 
     This is an H1
     =============
 
     This is an H2
     -------------
-
+```
 任何数量的 `=` 和 `-` 都可以有效果。
 
 类 Atx 形式则是在行首插入 1 到 6 个 `#` ，对应到标题 1 到 6 阶，例如：
-
+```markdown
     # 这是 H1
 
     ## 这是 H2
 
     ###### 这是 H6
-
+```
 你可以选择性地「闭合」类 atx 样式的标题，这纯粹只是美观用的，若是觉得这样看起来比较舒适，你就可以在行尾加上 `#`，而行尾的 `#` 数量也不用和开头一样（行首的井字符数量决定标题的阶数）：
-
+```markdown
     # 这是 H1 #
 
     ## 这是 H2 ##
 
     ### 这是 H3 ######
-
+```
 
 #### 区块引用 Blockquotes
 
 Markdown 标记区块引用是使用类似 email 中用 `>` 的引用方式。如果你还熟悉在 email 信件中的引言部分，你就知道怎么在 Markdown 文件中建立一个区块引用，那会看起来像是你自己先断好行，然后在每行的最前面加上 `>` ：
-
-    > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-    > consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-    > Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-    > 
-    > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-    > id sem consectetuer libero luctus adipiscing.
-
+```markdown
+> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+> consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+> Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+> 
+> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+> id sem consectetuer libero luctus adipiscing.
+```
 Markdown 也允许你偷懒只在整个段落的第一行最前面加上 `>` ：
+```markdown
+> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 
-    > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-    consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-    Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
-    > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-    id sem consectetuer libero luctus adipiscing.
+> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.
+```
 
 区块引用可以嵌套（例如：引用内的引用），只要根据层次加上不同数量的 `>` ：
-
-    > This is the first level of quoting.
-    >
-    > > This is nested blockquote.
-    >
-    > Back to the first level.
+```markdown
+> This is the first level of quoting.
+>
+> > This is nested blockquote.
+>
+> Back to the first level.
+```
 
 引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码区块等：
 
-	> ## 这是一个标题。
-	> 
-	> 1.   这是第一行列表项。
-	> 2.   这是第二行列表项。
-	> 
-	> 给出一些例子代码：
-	> 
-	>     return shell_exec("echo $input | $markdown_script");
+```markdown
+> ## 这是一个标题。
+> 
+> 1.   这是第一行列表项。
+> 2.   这是第二行列表项。
+> 
+> 给出一些例子代码：
+> 
+>     return shell_exec("echo $input | $markdown_script");
+```
 
 任何像样的文本编辑器都能轻松地建立 email 型的引用。例如在 BBEdit 中，你可以选取文字后然后从选单中选择*增加引用阶层*。
 
@@ -196,29 +201,29 @@ Markdown 也允许你偷懒只在整个段落的第一行最前面加上 `>` ：
 Markdown 支持有序列表和无序列表。
 
 无序列表使用星号、加号或是减号作为列表标记：
-
-    *   Red
-    *   Green
-    *   Blue
-
+```markdown
+*   Red
+*   Green
+*   Blue
+```
 等同于：
-
-    +   Red
-    +   Green
-    +   Blue
-
+```markdown
++   Red
++   Green
++   Blue
+```
 也等同于：
-
-    -   Red
-    -   Green
-    -   Blue
-
+```markdown
+-   Red
+-   Green
+-   Blue
+```
 有序列表则使用数字接着一个英文句点：
-
-    1.  Bird
-    2.  McHale
-    3.  Parish
-
+```markdown
+1.  Bird
+2.  McHale
+3.  Parish
+```
 很重要的一点是，你在列表标记上使用的数字并不会影响输出的 HTML 结果，上面的列表所产生的 HTML 标记为：
 
     <ol>
@@ -683,50 +688,3 @@ Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的�
     -   减号
     .   英文句点
     !   惊叹号
-
-### 感谢
-
-感谢 [leafy7382][] 协助翻译，[hlb][]、[Randylien][] 帮忙润稿，[ethantw][] 的[汉字标准格式・CSS Reset][]， [WM][] 回报文字错误。
-
-[leafy7382]:https://twitter.com/#!/leafy7382
-[hlb]:http://iamhlb.com/
-[Randylien]:http://twitter.com/randylien
-[ethantw]:https://twitter.com/#!/ethantw
-[汉字标准格式・CSS Reset]:http://ethantw.net/projects/han/
-[WM]:http://kidwm.net/
-
-感谢 [fenprace][]，[addv][]。
-
-[fenprace]:https://github.com/fenprace
-[addv]:https://github.com/addv
-
-----------
-### Markdown 免费编辑器
-
-Windows 平台
-
-* [MarkdownPad](http://markdownpad.com/)
-* [MarkPad](http://code52.org/DownmarkerWPF/)
-
-Linux 平台
-
-* [ReText](http://sourceforge.net/p/retext/home/ReText/)
-
-Mac 平台
-
-* [Mou](http://mouapp.com/)
-
-在线编辑器
-
-* [Markable.in](http://markable.in/)
-* [Dillinger.io](http://dillinger.io/)
-
-浏览器插件
-
-* [MaDe](https://chrome.google.com/webstore/detail/oknndfeeopgpibecfjljjfanledpbkog) (Chrome)
-
-高级应用
-
-* [Sublime Text 2](http://www.sublimetext.com/2) + [MarkdownEditing](http://ttscoff.github.com/MarkdownEditing/) / [教程](http://lucifr.com/2012/07/12/markdownediting-for-sublime-text-2/)
-
-\*** 如有更好的 Markdown 免费编辑器推荐，请到[这里反馈](https://gitcafe.com/riku/Markdown-Syntax-CN/tickets/1)，谢谢！
