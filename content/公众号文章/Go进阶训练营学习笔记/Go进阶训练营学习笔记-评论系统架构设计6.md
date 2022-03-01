@@ -18,7 +18,7 @@ categories:
 - Go进阶训练营
 - Golang
 - Error
-image: /images/face/Go进阶训练营评论系统架构设计.png
+image: /images/face/Go进阶评论系统架构.png
 ---
 
 ![](https://pic4.zhimg.com/v2-683be6cff5288cd457d0241e4b760c6c)
