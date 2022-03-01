@@ -17,7 +17,7 @@ series:
 categories:
 - Go进阶训练营
 - Golang
-image: 
+image: /images/face/Go进阶currency.png
 ---
 
 ![](https://pic4.zhimg.com/v2-683be6cff5288cd457d0241e4b760c6c)

@@ -18,7 +18,7 @@ categories:
 - Go进阶训练营
 - Golang
 - Error
-image: 
+image: /images/face/Go进阶error.png
 ---
 
 ![](https://pic4.zhimg.com/v2-683be6cff5288cd457d0241e4b760c6c)
