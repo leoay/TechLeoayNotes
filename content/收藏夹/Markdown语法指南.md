@@ -97,7 +97,7 @@ AT&T
 
 Markdown 就会将它转为：
 
-```markdown
+```html
 AT&amp;T
 ```
 
@@ -109,7 +109,7 @@ AT&amp;T
 
 Markdown 将会把它转换为：
 
-```markdown
+```html
 4 &lt; 5
 ```
 
@@ -299,7 +299,7 @@ Suspendisse id sem consectetuer libero luctus adipiscing.
 
 会被转换为：
 
-```markdown
+```html
 <ul>
 <li>Bird</li>
 <li>Magic</li>
@@ -410,7 +410,7 @@ Here is an example of AppleScript:
 
 会被转换为：
 
-```markdown
+```html
 <p>Here is an example of AppleScript:</p>
 
 <pre><code>tell application "Foo"
@@ -431,7 +431,7 @@ end tell
 
 会被转换为：
 
-```markdown
+```html
 <pre><code>&lt;div class="footer"&gt;
     &amp;copy; 2004 Foo Corporation
 &lt;/div&gt;
@@ -476,7 +476,7 @@ This is [an example](http://example.com/ "Title") inline link.
 
 会产生：
 
-```markdown
+```html
 <p>This is <a href="http://example.com/" title="Title">
 an example</a> inline link.</p>
 
@@ -598,7 +598,7 @@ I get 10 times more traffic from [Google][] than from
 
 上面两种写法都会产生下面的 HTML。
 
-```markdown
+```html
 <p>I get 10 times more traffic from <a href="http://google.com/"
 title="Google">Google</a> than from
 <a href="http://search.yahoo.com/" title="Yahoo Search">Yahoo</a>
@@ -775,7 +775,7 @@ Markdown 支持以比较简短的自动链接形式来处理网址和电子邮�
 
 Markdown 会转为：
 
-```markdown
+```html
 <a href="http://example.com/">http://example.com/</a>
 ```
 
@@ -787,7 +787,7 @@ Markdown 会转为：
 
 Markdown 会转成：
 
-```markdown
+```html
 <a href="&#x6D;&#x61;i&#x6C;&#x74;&#x6F;:&#x61;&#x64;&#x64;&#x72;&#x65;
 &#115;&#115;&#64;&#101;&#120;&#x61;&#109;&#x70;&#x6C;e&#x2E;&#99;&#111;
 &#109;">&#x61;&#x64;&#x64;&#x72;&#x65;&#115;&#115;&#64;&#101;&#120;&#x61;
