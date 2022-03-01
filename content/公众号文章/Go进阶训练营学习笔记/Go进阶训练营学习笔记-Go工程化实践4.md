@@ -17,7 +17,7 @@ categories:
 - Go进阶训练营
 - Golang
 - Error
-image: 
+image: /images/face/Go进阶工程化实践.png
 ---
 
 ![](https://pic4.zhimg.com/v2-683be6cff5288cd457d0241e4b760c6c)
@@ -81,3 +81,18 @@ image:
 ##### 5
 ##### 6
 ##### 7
+
+
+
+
+
+#### 参考文档：
+1. 
+2. 
+3. 
+4. 
+5. 
+
+
+感谢朋友们的阅读，欢迎大家关注我的微信公众号 leoay技术圈，扫描下方二维码查看详情。
+![](/Users/yaoshuai/Project/GolangProject/TechLeoayNotes/static/images/whoami/leoaytechgzh.jpg)
