@@ -95,4 +95,4 @@ image: /images/face/Go进阶工程化实践.png
 
 
 感谢朋友们的阅读，欢迎大家关注我的微信公众号 leoay技术圈，扫描下方二维码查看详情。
-![](/Users/yaoshuai/Project/GolangProject/TechLeoayNotes/static/images/whoami/leoaytechgzh.jpg)
+![](/images/whoami/leoaytechgzh.jpg)
