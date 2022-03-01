@@ -7,7 +7,7 @@ enableToc: true
 enableTocContent: false
 author: leoay
 authorEmoji: 🎅
-pinned: true
+pinned: false
 tags:
 - 网络
 - HTTP
