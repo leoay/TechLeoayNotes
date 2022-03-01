@@ -1,8 +1,8 @@
 +++
-aliases = ["cv"]
-title = "Go进阶训练营学习笔记"
+aliases = ["Go语言基础系列"]
+title = "Go语言基础系列"
 author = "leoay"
-tags = ["index"]
-description = "Go进阶训练营学习笔记"
+tags = [""]
+description = "Go语言基础系列"
 +++
 

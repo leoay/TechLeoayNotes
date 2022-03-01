@@ -1,8 +1,8 @@
 +++
-aliases = ["cv"]
+aliases = ["LeetCode题解系列"]
 title = "LeetCode题解系列"
 author = "leoay"
-tags = ["index"]
+tags = [""]
 description = "LeetCode题解系列"
 image= "/images/face/leetcode.png"
 +++

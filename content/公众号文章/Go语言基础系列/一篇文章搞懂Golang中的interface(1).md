@@ -8,7 +8,7 @@ enableToc: true
 enableTocContent: false
 author: leoay
 authorEmoji: 🎅
-pinned: true
+pinned: false
 authorImageUrl: "/images/whoami/shuaian.jpg"
 tags:
 - golang

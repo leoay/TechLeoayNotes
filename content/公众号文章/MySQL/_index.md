@@ -1,8 +1,8 @@
 +++
-aliases = ["cv"]
+aliases = ["MySQL系列"]
 title = "MySQL系列"
 author = "leoay"
-tags = ["index"]
-description = "技术随想"
+tags = [""]
+description = "MySQL系列"
 +++
 

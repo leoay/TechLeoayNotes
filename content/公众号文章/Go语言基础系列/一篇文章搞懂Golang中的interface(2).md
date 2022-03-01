@@ -8,7 +8,7 @@ enableToc: true
 enableTocContent: false
 author: leoay
 authorEmoji: 🎅
-pinned: true
+pinned: false
 tags:
 - golang
 - interface
