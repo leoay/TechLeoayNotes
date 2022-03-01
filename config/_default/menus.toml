@@ -17,6 +17,12 @@
   weight = 3
 
 [[main]]
+  identifier = "收藏夹"
+  name = "收藏夹"
+  url = "收藏夹"
+  weight = 4
+
+[[main]]
   identifier = "关于"
   name = "关于"
   url = "关于"
