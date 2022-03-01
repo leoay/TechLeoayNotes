@@ -18,9 +18,9 @@ categories:
 image: /images/face/markdown.png
 ---
 
-#### 概述
+### 概述
 
-##### 宗旨
+#### 宗旨
 
 Markdown 的目标是实现「易读易写」。
 
