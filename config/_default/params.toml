@@ -207,6 +207,6 @@ commento = false
 #[[share]]
 #  name = ""
 
-#[[footerLinks]]
-#  name = ""
-#  link = ""
+[[footerLinks]]
+  name = "facebook"
+  link = "https://jkjk.com"
