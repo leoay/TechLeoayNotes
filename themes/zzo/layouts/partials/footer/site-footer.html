@@ -29,10 +29,9 @@
                     {{ with $.Site.Copyright }}{{ replace . "{year}" now.Year | markdownify}}{{ end }}
                 {{ end }}
             </p>
-
-            <p class="caption"><a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank" rel="noreferrer">本站由<img src="/images/又拍云_logo6.png" style="width: 10%">提供CDN加速/云存储服务</a></p>
-
         {{ end }}
+
+        <p class="caption"><a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank" rel="noreferrer">本站由  又拍云 提供CDN加速/云存储服务</a></p>
 
         {{ if $.Param "showPoweredBy" }}
             <p class="caption">Powered by <a href="https://gohugo.io/" target="_blank" rel="noreferrer">Hugo</a> and the <a href="https://github.com/zzossig/hugo-theme-zzo" target="_blank" rel="noreferrer">Zzo theme</a></p>
