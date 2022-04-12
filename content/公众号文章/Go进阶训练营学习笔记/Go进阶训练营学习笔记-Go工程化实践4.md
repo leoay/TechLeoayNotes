@@ -1,5 +1,5 @@
 ---
-title: "Go进阶训练营学习笔记☍Go工程化实践4"
+title: "【4】Go进阶笔记-Go工程化实践4"
 date: 2022-01-04T14:28:31+08:00
 draft: false
 hideToc: false
@@ -8,14 +8,14 @@ enableTocContent: false
 author: leoay
 authorEmoji: 🎅
 pinned: false
-description: "Go进阶训练营学习笔记 工程化实践"
+description: "Go进阶笔记 工程化实践"
 tags:
 - Error
-- Go进阶训练营
+- Go进阶
 series:
-- Go进阶训练营
+- Go进阶
 categories:
-- Go进阶训练营
+- Go进阶
 - Golang
 - Error
 image: /images/face/Go进阶工程化实践.png

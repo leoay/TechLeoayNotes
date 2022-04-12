@@ -1,5 +1,5 @@
 ---
-title: "Go进阶训练营学习笔记☍Go架构实践与微服务1"
+title: "【1】Go进阶笔记-Go架构实践与微服务"
 date: 2022-01-01T14:28:31+08:00
 draft: false
 hideToc: false
@@ -8,7 +8,7 @@ enableTocContent: false
 author: leoay
 authorEmoji: 🎅
 pinned: false
-description: "Go进阶训练营学习笔记 Go架构 微服务"
+description: "Go进阶笔记 Go架构 微服务"
 tags:
 - Go架构
 - 微服务

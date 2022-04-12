@@ -1,5 +1,5 @@
 ---
-title: "Go进阶训练营学习笔记☍Go语言实践error2"
+title: "【2】Go进阶笔记-Go语言实践error2"
 date: 2022-01-02T14:28:31+08:00
 draft: false
 hideToc: false
@@ -8,14 +8,14 @@ enableTocContent: false
 author: leoay
 authorEmoji: 🎅
 pinned: false
-description: "Go进阶训练营学习笔记 Go语言实践error"
+description: "Go进阶笔记 Go语言实践error"
 tags:
 - Error
 - Go进阶训练营
 series:
-- Go进阶训练营
+- Go进阶
 categories:
-- Go进阶训练营
+- Go进阶
 - Golang
 - Error
 image: /images/face/Go进阶error.png
