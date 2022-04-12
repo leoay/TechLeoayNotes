@@ -20,3 +20,4 @@ categories:
 image: 
 ---
 
+这是一个问题，http的请求过程究竟是怎样的？
