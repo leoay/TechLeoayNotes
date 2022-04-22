@@ -43,3 +43,16 @@ image: images/feature2/color-palette.png
  * 分代收集
     优点：回收性能好
     缺点：算法复杂
+
+#### 3. Golang 垃圾回收算法介绍
+
+##### 三色标记法
+    三色标记法只是一个名称，并不代表对象是有颜色的，实际上这里的三色代表着垃圾回收中对象的三种状态：
+
+    （1）灰色。对象在标记队列中等待。
+    （2）黑色。对象已被标记， gcmarkBits 标志位置 1，表示该对象不会在本次GC中被回收。
+    （3）白色。对象未被标记， gcmarkBits 标志位置 0，表示该对象将在本次GC中被回收。
+
+    具体流程图如下所示：
+
+    [!](https://ask.qcloudimg.com/http-save/yehe-4937544/fcalcm402y.jpeg?imageView2/2/w/1620)
