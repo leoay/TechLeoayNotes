@@ -20,7 +20,7 @@ categories:
 image: images/feature2/color-palette.png
 ---
 
-#### 1. 常见的垃圾回收算法
+#### 一、 常见的垃圾回收算法
 * 引用计数 PHP、Swift、Python
     - 为每个对象维护一个引用计数，当引用该对象的对象销毁时，引用计数 -1，当对象引用计数为 0 时回收该对象。
 
@@ -30,7 +30,7 @@ image: images/feature2/color-palette.png
 * 分代收集 JAVA
     - 按照对象生命周期长短划分不同的代空间，生命周期长的放入老年代，短的放入新生代，不同代有不同的回收算法和回收频率。
 
-#### 2. 常用垃圾回收算法的优缺点
+#### 二、 常用垃圾回收算法的优缺点
 
 * 引用计数法
     优点：对象回收快，不会出现内存耗尽或达到某个阈值时才回收
@@ -44,9 +44,10 @@ image: images/feature2/color-palette.png
     优点：回收性能好
     缺点：算法复杂
 
-#### 3. Golang 垃圾回收算法介绍
+#### 三、 Golang 垃圾回收算法介绍
 
 ##### 三色标记法
+###### 1. 简介
 三色标记法只是一个名称，并不代表对象是有颜色的，实际上这里的三色代表着垃圾回收中对象的三种状态：
 
 （1）灰色。对象在标记队列中等待。
@@ -56,3 +57,7 @@ image: images/feature2/color-palette.png
 具体流程图如下所示：
 
 ![图片](https://ask.qcloudimg.com/http-save/yehe-4937544/fcalcm402y.jpeg?imageView2/2/w/1620)
+
+###### 2. 原理
+
+
