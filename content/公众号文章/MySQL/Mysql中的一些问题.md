@@ -18,3 +18,5 @@ categories:
 - MySQL
 image: /images/face/MYSQL_Color_3-405x405.png
 ---
+
+### 1. 数据库的三范式是什么？
