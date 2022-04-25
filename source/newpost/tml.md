@@ -19,6 +19,7 @@ categories:
 image: /images/face/MYSQL_Color_3-405x405.png
 ---
 
+
 ### 1. 数据库的三个范式是什么？
     
 * 第一范式（1NF）：字段不可分；即原子性，字段不可以再分
