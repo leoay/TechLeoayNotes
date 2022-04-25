@@ -59,5 +59,3 @@ image: images/feature2/color-palette.png
 ![图片](https://ask.qcloudimg.com/http-save/yehe-4937544/fcalcm402y.jpeg?imageView2/2/w/1620)
 
 ###### 2. 原理
-
-
