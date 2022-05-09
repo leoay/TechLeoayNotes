@@ -18,3 +18,7 @@ image: images/face/面试golang.png
 ---
 
 ![](https://pic4.zhimg.com/v2-49ec2bdf975ead3536bbb647f12ee22c)
+
+### 谈谈Golang的并发机制和它使用的CPS并发模型
+
+CPS并发模型使用“通信的方式共享内存”， 

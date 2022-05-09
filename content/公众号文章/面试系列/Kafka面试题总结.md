@@ -16,8 +16,15 @@ tags:
 series:
 
 categories:
-- MySQL
+- KafKa
 image: /images/face/MYSQL_Color_3-405x405.png
 ---
 
 https://blog.csdn.net/m0_48795607/article/details/116659584
+
+1. Apache Kafka是什么?
+2. 什么是消费者组?
+3. 在Kafka中，ZooKeeper的作用是什么?
+4. 解释下Kafka中位移（offset）的作用是什么?
+5. 阐述下Kafka中领导者副本和追随者副本的区别?
+6. 
