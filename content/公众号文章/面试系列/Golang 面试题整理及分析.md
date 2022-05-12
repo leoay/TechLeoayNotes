@@ -20,7 +20,7 @@ image: images/face/面试golang.png
 
 ![](https://pic4.zhimg.com/v2-49ec2bdf975ead3536bbb647f12ee22c)
 
-### 谈谈Golang的并发机制和它使用的CPS并发模型
+### 一、谈谈Golang的并发机制和它使用的CPS并发模型
 
 CPS并发模型使用“通信的方式共享内存”， 而传统的多线程通过共享内存的方式进行通信。
 
@@ -75,3 +75,10 @@ Channel 是 Go 语言中各个并发结构体之间的通信机制。通常 Chan
 
 因此 GPM 的简要概括即为： 事件循环，线程池，工作队列。
 
+### 二、Golang 常用的并发模型
+
+Golang 中常用的并发模型有三种：
+
+#### 1. 通过 channel 发送消息实现并发控制
+
+无缓存的通道指的是通道的大小为0， 也就是说，这种类型的通道在接收前没有能力保存任何值，它要求发送 goroutine 和 接收 goroutine 同时准备hao
