@@ -4,6 +4,7 @@ date: 2022-01-12T14:28:31+08:00
 draft: false
 hideToc: false
 enableToc: true
+description: "Golang 面试题整理及分析"
 enableTocContent: false
 author: leoay
 authorEmoji: 🎅
@@ -43,7 +44,7 @@ Goroutine 是 Golang 实际并发执行的实体，它底层是使用协程( cor
 
  所以有时候线程对象会比处理器对象多很多。
 
- 我们用下图表示P、M、G。
+ 我们用下图表示P、M、G
 
  (图)
 
@@ -60,4 +61,18 @@ Goroutine 是 Golang 实际并发执行的实体，它底层是使用协程( cor
 当M0返回时，它会尝试从其他线程中“偷”一个上下文过来，如果没有偷到，会把 Goroutine 放到 `Golbal runqueue` 中去，然后把自己放入线程缓存中。
 上下文会定时检查 `Global runqueue`。
 
-`Golang` 是为并发而生的语言
+`Golang` 是为并发而生的语言，Go语言是为数不多的在语言层面实现并发的语言；也正是Go语言的并发特性，吸引了全球无数的开发者。
+
+Golang的CSP并发模型，是通过Goroutine和Channel来实现的。
+
+Goroutine 是Go语言中并发的执行单位。有点抽象，其实就是和传统概念上的“线程”类似，可以理解为“线程”。
+
+Channel 是 Go 语言中各个并发结构体之间的通信机制。通常 Channel, 是各个 Goroutine 之间的通信的 “管道”， 有点类似于 Linux 中的管道。
+
+通信机制channel 也很方便，传数据用 `channel <- data`, 取数据用`<- channel`。
+
+而且不管是传还是取，肯定阻塞，直到另外的 goroutine 传或者取为止。
+
+因此 GPM 的简要概括即为： 事件循环，线程池，工作队列。
+
+###
