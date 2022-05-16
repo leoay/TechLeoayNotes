@@ -58,7 +58,7 @@ Goroutine 是 Golang 实际并发执行的实体，它底层是使用协程( cor
 
  当正在运行的G0阻塞的时候 （可以需要IO），会再创建一个线程 （M1）, P 转到新的线程中去运行。
 
-当M0返回时，它会尝试从其他线程中“偷”一个上下文过来，如果没有偷到，会把 Goroutine 放到 `Golbal runqueue` 中去，然后把自己放入线程缓存中。
+当M0返回时，它会尝试从其他线程中“偷”一个上下文过来，如果没有偷到，会把 Goroutine 放到 `Global runqueue` 中去，然后把自己放入线程缓存中。
 上下文会定时检查 `Global runqueue`。
 
 `Golang` 是为并发而生的语言，Go语言是为数不多的在语言层面实现并发的语言；也正是Go语言的并发特性，吸引了全球无数的开发者。
@@ -81,4 +81,205 @@ Golang 中常用的并发模型有三种：
 
 #### 1. 通过 channel 发送消息实现并发控制
 
-无缓存的通道指的是通道的大小为0， 也就是说，这种类型的通道在接收前没有能力保存任何值，它要求发送 goroutine 和 接收 goroutine 同时准备hao
+无缓存的通道指的是通道的大小为0， 也就是说，这种类型的通道在接收前没有能力保存任何值，它要求发送 goroutine 和 接收 goroutine 同时准备好，才可以完成发送和接收操作。
+
+从上面无缓冲的通道定义来看，发送 goroutine 和接收 goroutine 必须是同步的，同时准备后，如果没有同时准备好的话，先执行的操作会阻塞等待，直到另一个相对应的操作准备好为止。这种无缓冲的通道我们也称之为同步通道。
+
+```go
+func main() {
+    ch := make(chan struct() {})
+    go func() {
+        fmt.Println("start working")
+        time.Sleep(time.Second * 1)
+        ch <- struct{}{}
+    }()
+
+    <-ch
+
+    fmt.Println("finished")
+}
+```
+
+当主 goroutine 运行到 `<-ch` 接受 channel 的值的时候，如果该 channel 中没有数据，就会一直阻塞等待，直到有值。这样就可以简单实现并发控制。
+
+#### 2. 通过 sync 包中的WaitGroup 实现并发控制
+
+Goroutine 是异步执行的，有时候为了防止在结束 main 函数的时候结束掉 Goroutine， 所以需要同步等待，这个时候就需要用 WaitGroup 了，在 sync 包中，提供了 WaitGroup，它会等待它收集的所有 goroutine 任务全部完成。
+
+在 WaitGroup 里主要有三个方法：
+
+* Add， 可以添加或减少 goroutine 的数量
+* Done， 相当于Add(-1)
+* Wait，执行后会堵塞主线程，直到 WaitGroup 里的值减至 0.
+
+在主 goroutine 中 Add(delta int) 索要等待 goroutine 的数量。在每一个 goroutine 完成后 Done() 表示这一个 gorouine 已经完成，当所有的 goroutine 都完成后，在主 goroutine 中 WaitGroup 返回。
+
+```go
+func main() {
+    var Wg sync.WaitGroup
+    var urls = []string{
+        "http://www.golang.org/",
+        "http://www.google.com/",
+    }
+    for _, url := urls {
+        wg.Add(1)
+        go func(url string) {
+            defer wg.Done()
+            http.Get(url)
+        }(url)
+    }
+    wg.Wait()
+}
+```
+在 `Golang` 官网中对于 `WaitGroup` 介绍是 `A WaitGroup must not be copied after first use`, 在WaitGroup 第一次使用后，不能被拷贝。
+
+应用示例：
+
+```go
+func main() {
+    wg := sync.WaitGroup{}
+    for i:= 0; i < 5; i++ {
+        wg.Add()
+        go func(wg sync.WaitGroup, i int) {
+            fmt.Println(i)
+            wg.Done()
+        }(wg, i)
+    }
+    wg.Wait()
+    fmt.Println("exit")
+}
+```
+
+运行：
+
+```go
+i:1i:3i:2i:0i:4fatal error: all goroutines are asleep - deadlock!
+
+goroutine 1 [semacquire]:
+sync.runtime_Semacquire(0xc000094018)
+        /home/keke/soft/go/src/runtime/sema.go:56 +0x39
+sync.(*WaitGroup).Wait(0xc000094010)
+        /home/keke/soft/go/src/sync/waitgroup.go:130 +0x64
+main.main()
+        /home/keke/go/Test/wait.go:17 +0xab
+exit status 2
+```
+
+它提示所有的 `goroutine` 都已经睡眠了，出现了死锁。这是因为 wg 给拷贝传递到了 goroutine 中，导致只有 Add 操作，其实 Done 操作是在 wg 的副本执行的。
+
+因此 Wait 就会死锁。
+
+这个第一个修改方式： 将匿名函数中 wg 的传入类型改为 `*sync.WaitGroup`, 这样就能引用到正确的 `WaitGroup` 了。
+
+这个第二个修改方式：将匿名函数中的 wg 的传入参数去掉，因为Go支持闭包类型，在匿名函数中可以直接使用外面的 wg 变量。
+
+#### 3. 在Go 1.7 以后引进的强大的Context上下文，实现并发控制
+
+通常在一些简单场景下使用 channel 和 WaitGroup 已经足够了，但是当面临一些复杂多变的网络并发场景下 `channel` 和 `WaitGroup` 显得有些力不从心了。
+
+比如一个网络请求 Request， 每个Request 都需要开启一个 goroutine 做一些事情， 这些 goroutine 又可能会开启其他的 goroutine, 比如数据库和RPC服务。
+
+所以我们需要一种可以跟踪 `goroutine` 的方案，才可以达到控制他们的目的，这就是 Go 语言为我们提供的 `Context`， 称之为上下文非常贴切，它就是 goroutine 的上下文。
+
+它是包括一个程序的运行环境、现场和快照等。每个程序要运行时，都需要知道当前程序的运行状态，通常 Go 将这些封装在一个 Context 里，再将它传给要执行的 goroutine。
+
+context 包主要就是用来处理多个 goroutine 之间共享数据。及多个 goroutine 的管理。
+
+context 包的核心是 struct Context, 接口声明如下：
+
+```go
+// A Context carries a deadline, cancelation signal, and request-scoped values
+// across API boundaries. Its methods are safe for simultaneous use by multiple
+// goroutines.
+type Context interface {
+    // Done returns a channel that is closed when this `Context` is canceled
+    // or times out.
+    // Done() 返回一个只能接受数据的channel类型，当该context关闭或者超时时间到了的时候，该channel就会有一个取消信号
+    Done() <-chan struct{}
+
+    // Err indicates why this Context was canceled, after the Done channel
+    // is closed.
+    // Err() 在Done() 之后，返回context 取消的原因。
+    Err() error
+
+    // Deadline returns the time when this Context will be canceled, if any.
+    // Deadline() 设置该context cancel的时间点
+    Deadline() (deadline time.Time, ok bool)
+
+    // Value returns the value associated with key or nil if none.
+    // Value() 方法允许 Context 对象携带request作用域的数据，该数据必须是线程安全的。
+    Value(key interface{}) interface{}
+}
+```
+
+Context 对象是线程安全的，你可以把一个 Context 对象传递给任意个数的 goroutine, 对它执行取消操作时，所有 goroutine 都会接受到取消信号。
+
+一个 Context 不能拥有 Cancel 方法，同时我们也只能 Done channel 接收数据。其中的原因是一致的： 接收取消信号的函数和发送信号的函数通常不是一个。
+
+典型的场景是：父操作作为子操作操作启动 goroutine, 子操作也就不能取消父操作。
+
+### 三、Go 中对 nil 的 slice 和 空Slice的处理是一致的吗？
+
+首先 Go 的 JSON 标准对 `nil slice`和 空 `slice` 的处理是不一致的。
+
+通常错误的用户，会报数组越界的错误，因为只是声明了 slice，却没有给实例化的对象。
+
+```go
+var slice []int
+slice[1] = 0
+```
+
+此时 slice 的值是 nil，这种情况可以用于需要返回 slice 的函数， 当函数出现异常的时候， 保证函数依然会有 nil 的返回值。
+
+empty slice 是指 slice 不为 nil, 但是 slice没有值， slice 的底层的空间是空的，此时的定义如下：
+
+```go
+slice := make([]int, 0)
+slice := []int{}
+```
+
+当我们查询或者处理一个空的列表的时候，这非常有用，它会告诉我们返回的是一个列表，但是列表内没有任何值。
+
+总之， `nil slice` 和 `empty slice` 是不同的东西，需要我们加以区分的。
+
+### 四、协程、线程、进程的区别
+
+* 进程
+
+进程是具有一定独立功能的程序，是系统进行资源分配和调度的一个独立单位。
+
+每个进程都有自己的独立内存空间，不同进程通过进程间通信来通信。由于进程比较重，占据独立的内存，所以上下文进程间的切换、开销(栈、寄存器、虚拟内存、文件句柄等)比较大，但相对比较稳定安全。
+
+* 线程
+
+线程是进程的一个实体，线程是内核态，而且是CPU调度和分派的基本单位，它是比进程更小的能独立运行的基本单位。线程自己基本上不拥有系统资源，只拥有一点在运行中必不可少的资源(如程序计数器， 一组寄存器和栈)， 但是它可与同属一个进程的其他线程共享进程所拥有的全部资源。
+
+线程间通信
+
+
+* 协程
+
+协程是一种用户态的轻量级线程，协程的调度完全由用户控制。协程拥有自己的寄存器上下文和栈。
+
+协程调度切换时，将寄存器上下文和栈保存到其他地方，在切回来的时候，恢复先前保存的寄存器上下文和栈，直接操作栈则基本没有内核切换的开销，可以不加锁地访问全局变量，所以上下文的切换非常快。
+
+### 五、Go中数据竞争问题怎么解决？
+
+`Data Race` 问题可以使用互斥锁 `sync.Mutex`, 或者也可以通过 CAS 无锁并发解决。
+其中使用同步访问共享数据或者CAS无锁并发是处理数据竞争的一种有效的方法。
+
+golang 在1.1之后引入了竞争检测机制，可以使用 `go run -race` 或者 `go build -race` 来进行静态检测。
+
+其在内部的实现是，开启多个协程执行同一个命令， 并且记录下每个变量的状态。
+
+竞争检测器基于C/C++的 `ThreadSanitizer` 运行时库， 该库在 Google 内部代码基地和 Chromium 找到许多错误。这个技术在2012年九月集成到 Go 中，从那时开始，它已经在标准库中检测到42个竞争条件。现在，它已经是我们持续构建过程的一部分，当竞争条件出现时，它会继续捕捉到这些错误。
+
+竞争检测器已经完全集成到Go工具链中，仅仅添加-race 标志到命令行就使用了检测器。
+
+```go
+$ go test -race mypkg    //测试包
+$ go run -race mysrc.go  //编译和运行程序
+$ go build -race mycmd   //构建程序
+$ go install -race mypkg
+```
+要想解决数据竞争的问题，可以使用互斥锁`sync.Mutex`, 解决数据竞争(Data race)，也可以使用管道解决，使用管道的效率要比互斥锁高。
