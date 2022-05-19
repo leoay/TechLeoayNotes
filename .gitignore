@@ -1,2 +1,5 @@
 .vscode
 public
+.Ulysses-Group.plist
+.Ulysses-Settings.plist
+.hugo_build.lock
