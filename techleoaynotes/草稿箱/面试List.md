@@ -1,25 +1,3 @@
----
-title: "面试List"
-date: 2022-05-09T14:28:31+08:00
-draft: false
-hideToc: false
-enableToc: true
-enableTocContent: false
-author: leoay
-authorEmoji: 🎅
-pinned: false
-description: "面试List"
-tags:
-- 
-- 
-series:
-
-categories:
-- 
-image: /images/face/MYSQL_Color_3-405x405.png
----
-
-
 0. 基础技术
 
     [0] 数据结构与算法(树、动态规划、排序算法、LeetCode、剑指Offer)
@@ -71,7 +49,7 @@ image: /images/face/MYSQL_Color_3-405x405.png
     加解密，web通信，邮件发送
 
 2. 智能摄像机算法开发及优化(c、ncnn)
-
+ 
 
 
 3. 一个写作网站开发(业余项目 react beego Editor.md)
@@ -114,11 +92,9 @@ image: /images/face/MYSQL_Color_3-405x405.png
     *
     *
 
-
 期望职位
     * 职位名称
     * 目标薪资
-
 
 工作经历
     1.
@@ -126,12 +102,9 @@ image: /images/face/MYSQL_Color_3-405x405.png
     3.
     4.
 
-
 项目经历
     1.
     2.
     3.
     4.
     5.
-
-
