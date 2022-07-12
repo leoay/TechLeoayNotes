@@ -56,6 +56,7 @@ image: images/feature2/color-palette.png
 
 具体流程图如下所示：
 
-![图片](https://ask.qcloudimg.com/http-save/yehe-4937544/fcalcm402y.jpeg?imageView2/2/w/1620)
+![图片](https://segmentfault.com/img/remote/1460000020086772?w=430&h=360)
 
 ###### 2. 原理
+
