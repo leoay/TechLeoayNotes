@@ -23,7 +23,13 @@
   weight = 4
 
 [[main]]
+  identifier = "计划"
+  name = "计划"
+  url = "计划"
+  weight = 5
+
+[[main]]
   identifier = "关于"
   name = "关于"
   url = "关于"
-  weight = 4
+  weight = 6
