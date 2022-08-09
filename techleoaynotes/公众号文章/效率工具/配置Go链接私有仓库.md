@@ -1,6 +1,6 @@
 ---
 title: "配置Go链接私有仓库"
-date: 2022-02-15T10:33:41+09:00
+date: 2022-08-09T10:33:41+09:00
 description: "配置Go链接私有仓库"
 draft: false
 hideToc: false
